@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<h1>当前计数：{{counter}}</h1>
+			<!--语法糖：简写-->
+			<!--    v-on:click简写：@click   -->
+			<button @click="increament">+</button>
+			<button @click="decreament">-</button>
+			<!--也可以在click中直接加减-->
+			<!--<button @click="counter++">+</button>
+			<button @click="counter--">-</button>-->
+		</div>
+	</body>
+	<script src="../00/js/vue.js" type="text/javascript" charset="UTF-8"></script>
+	<script>
+		let app = new Vue({
+			el:'#app',    //用于管理要挂载的元素
+			data:{   //定义数据的地方
+				counter:0
+			},
+			//viewmodel层  view和model的桥梁
+			methods:{
+				//increament:function(){}
+				increament(){
+					this.counter++
+				},
+				decreament(){
+					this.counter--
+				}
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			欢迎{{message}}
+		</div>
+		<div>
+			{{message}}
+		</div>
+	</body>
+	<script src="../00/js/vue.js" type="text/javascript" charset="UTF-8"></script>
+	<script>
+		//ES6:let 定义变量       const 定义常量
+		//数据与界面是完全分离的
+		//编程方式：声明式开发，jq是命令式开发
+		let app = new Vue({
+			el:'#app',    //用于管理要挂载的元素
+			data:{   //定义数据的地方
+				message:'vuejs'
+			},
+			methods:{
+				
+			}
+		})
+	</script>
+</html>

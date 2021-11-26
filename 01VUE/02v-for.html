@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<li v-for="item in movies">
+					{{item}}
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../00/js/vue.js" type="text/javascript" charset="UTF-8"></script>
+	<script>
+		let app = new Vue({
+			el:'#app',    //用于管理要挂载的元素
+			data:{   //定义数据的地方
+				movies:['我的姐姐','明天会好的','泰囧']
+			},
+			methods:{
+				
+			}
+		})
+	</script>
+</html>
